@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="uz" data-theme="light">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Dr. Xushnud Ahmedov — Allergolog</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <!-- NAVBAR -->
+        <nav id="navbar">
+            <div class="nav-logo"><span>Dr. </span>Ahmedov</div>
+            <div class="nav-links">
+                <a href="#about" data-key="nav_about">Haqida</a>
+                <a href="#services" data-key="nav_services">Xizmatlar</a>
+                <a href="#conditions" data-key="nav_conditions">Kasalliklar</a>
+                <a href="#contact" data-key="nav_contact">Aloqa</a>
+            </div>
+            <div class="nav-right">
+                <div class="lang-select">
+                    <button class="lang-btn active" onclick="setLang('uz')">
+                        UZ
+                    </button>
+                    <button class="lang-btn" onclick="setLang('ru')">RU</button>
+                    <button class="lang-btn" onclick="setLang('en')">EN</button>
+                </div>
+                <button class="theme-btn" onclick="toggleTheme()" id="themeBtn">
+                    🌙
+                </button>
+                <button
+                    class="nav-cta"
+                    onclick="scrollTo('contact')"
+                    data-key="nav_cta"
+                >
+                    Qabulga yozilish
+                </button>
+                <button class="mobile-menu-btn" onclick="toggleMobile()">
+                    ☰
+                </button>
+            </div>
+        </nav>
+
+        <!-- HERO -->
+        <section class="hero" id="hero">
+            <div class="hero-bg"></div>
+            <div class="hero-particles" id="particles"></div>
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <div class="badge-dot"></div>
+                        <span data-key="hero_badge">Mutaxassis Allergolog</span>
+                    </div>
+                    <h1 class="hero-title">
+                        Dr. Xushnud<br />
+                        <span class="accent">Ahmedov</span>
+                    </h1>
+                    <p class="hero-subtitle" data-key="hero_sub">
+                        Allergiya va immunologiya sohasida 15 yillik tajriba.
+                        Zamonaviy diagnostika usullari va individual yondashuv
+                        bilan har bir bemorga eng yaxshi natijani ta'minlaymiz.
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <div class="stat-num" data-count="15">0</div>
+                            <div class="stat-label" data-key="stat1">
+                                Yil tajriba
+                            </div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-num" data-count="3200">0</div>
+                            <div class="stat-label" data-key="stat2">
+                                Bemorlar
+                            </div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-num" data-count="98">0</div>
+                            <div class="stat-label" data-key="stat3">
+                                % Mamnunlik
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <button
+                            class="btn-primary"
+                            onclick="scrollTo('contact')"
+                            data-key="hero_btn1"
+                        >
+                            Qabulga yozilish
+                        </button>
+                        <button
+                            class="btn-outline"
+                            onclick="scrollTo('about')"
+                            data-key="hero_btn2"
+                        >
+                            Batafsil
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="doctor-card">
+                        <div class="doctor-img-wrap">
+                            <div class="doctor-rings">
+                                <div class="ring"></div>
+                                <div class="ring"></div>
+                                <div class="ring"></div>
+                            </div>
+                            <div class="doctor-avatar">
+                                <img
+                                    src="./img/doctor-img.jpg"
+                                    alt="Dr Xushnud Ahmedov shaxsiy rasmi"
+                                />
+                            </div>
+                        </div>
+                        <div class="doctor-info-card">
+                            <div class="doctor-name">Dr. Xushnud Ahmedov</div>
+                            <div class="doctor-title" data-key="doc_title">
+                                Allergolog-immunolog
+                            </div>
+                            <div class="doctor-details">
+                                <div class="detail-item">
+                                    <span class="detail-icon">🎓</span>
+                                    <span data-key="doc_edu">ToshDTI</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-icon">📍</span>
+                                    <span>Toshkent</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="float-badge float-badge-1">
+                        <div class="fb-icon">🏆</div>
+                        <div class="fb-val">15+</div>
+                        <div class="fb-label" data-key="stat1">Yil tajriba</div>
+                    </div>
+                    <div class="float-badge float-badge-2">
+                        <div class="fb-icon">⭐</div>
+                        <div class="fb-val">4.9</div>
+                        <div class="fb-label" data-key="rating">Reyting</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="about" id="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-img reveal">
+                        <div class="about-video-wrap">
+                            <iframe
+                                src="https://www.youtube.com/embed/QtIf5zUcqe8?si=9E7GVil0vCFx92jK&start=90"
+                                title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen
+                            >
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="about-content reveal">
+                        <div class="section-tag" data-key="about_tag">
+                            Doktor haqida
+                        </div>
+                        <h2 class="section-title" data-key="about_title">
+                            Allergiya bilan kurashishda ishonchli hamkoringiz
+                        </h2>
+                        <p class="about-text" data-key="about_text">
+                            Doktor Xushnud Ahmedov — O'zbekiston
+                            Respublikasining yetakchi allergolog-immunolog
+                            mutaxassislaridan biri. U Toshkent Davlat Tibbiyot
+                            Institutini bitirgan va Yevropa allergologiya
+                            markazlarida malaka oshirgan. Har bir bemorga
+                            individual yondashuv, zamonaviy diagnostika va
+                            samarali davolash usullari taklif etiladi.
+                        </p>
+                        <ul class="credentials-list">
+                            <li>
+                                <div class="cred-icon">🎓</div>
+                                <div>
+                                    <div
+                                        style="
+                                            font-weight: 600;
+                                            color: var(--text);
+                                            font-size: 0.875rem;
+                                        "
+                                        data-key="cred1_t"
+                                    >
+                                        ToshDTI — Oliy tibbiy ma'lumot
+                                    </div>
+                                    <div
+                                        style="
+                                            font-size: 0.8rem;
+                                            margin-top: 2px;
+                                        "
+                                        data-key="cred1_d"
+                                    >
+                                        Pediatriya va umumiy tibbiyot bo'yicha
+                                        diplom
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cred-icon">🏥</div>
+                                <div>
+                                    <div
+                                        style="
+                                            font-weight: 600;
+                                            color: var(--text);
+                                            font-size: 0.875rem;
+                                        "
+                                        data-key="cred2_t"
+                                    >
+                                        Yevropa allergologiya akademiyasi
+                                    </div>
+                                    <div
+                                        style="
+                                            font-size: 0.8rem;
+                                            margin-top: 2px;
+                                        "
+                                        data-key="cred2_d"
+                                    >
+                                        Malaka oshirish kurslari, 2019
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cred-icon">📜</div>
+                                <div>
+                                    <div
+                                        style="
+                                            font-weight: 600;
+                                            color: var(--text);
+                                            font-size: 0.875rem;
+                                        "
+                                        data-key="cred3_t"
+                                    >
+                                        Jahon allergologiya tashkiloti a'zosi
+                                    </div>
+                                    <div
+                                        style="
+                                            font-size: 0.8rem;
+                                            margin-top: 2px;
+                                        "
+                                        data-key="cred3_d"
+                                    >
+                                        WAO sertifikati, 2020
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cred-icon">🔬</div>
+                                <div>
+                                    <div
+                                        style="
+                                            font-weight: 600;
+                                            color: var(--text);
+                                            font-size: 0.875rem;
+                                        "
+                                        data-key="cred4_t"
+                                    >
+                                        Immunoterapiya bo'yicha mutaxassis
+                                    </div>
+                                    <div
+                                        style="
+                                            font-size: 0.8rem;
+                                            margin-top: 2px;
+                                        "
+                                        data-key="cred4_d"
+                                    >
+                                        SCIT va SLIT usullarida tajriba
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VIDEO -->
+        <section class="video-section">
+            <div class="container">
+                <div class="video-inner reveal">
+                    <div class="video-text">
+                        <div class="section-tag">Video</div>
+                        <h2 class="section-title">
+                            Doktor haqida ko'proq bilib oling
+                        </h2>
+                        <p class="section-sub">
+                            Allergologiya va immunologiya sohasidagi tajriba,
+                            davolash usullari va bemorlar bilan ishlash haqida
+                            batafsil ma'lumot.
+                        </p>
+                    </div>
+                    <div class="video-frame-wrap">
+                        <iframe
+                            src="https://www.youtube.com/embed/r_IRjgzq63g?si=cF-22UH1-dUEmW46"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                        >
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section class="services" id="services">
+            <div class="container">
+                <div class="section-header text-center reveal">
+                    <div class="section-tag" data-key="serv_tag">Xizmatlar</div>
+                    <h2 class="section-title" data-key="serv_title">
+                        Taklif etilayotgan xizmatlar
+                    </h2>
+                    <p class="section-sub" data-key="serv_sub">
+                        Diagnostikadan davolashgacha — zamonaviy tibbiyot
+                        usullarida to'liq kompleks yordam
+                    </p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card reveal">
+                        <div class="service-icon">🔬</div>
+                        <div class="service-name" data-key="s1_name">
+                            Allergiya diagnostikasi
+                        </div>
+                        <p class="service-desc" data-key="s1_desc">
+                            Teri testlari, qon tekshiruvi va provokatsiya
+                            testlari yordamida allergenni aniq aniqlash.
+                        </p>
+                        <div class="service-arrow">→</div>
+                    </div>
+                    <div class="service-card reveal">
+                        <div class="service-icon">💉</div>
+                        <div class="service-name" data-key="s2_name">
+                            Immunoterapiya (ASIT)
+                        </div>
+                        <p class="service-desc" data-key="s2_desc">
+                            Allergenga sezuvchanlikni kamaytirish uchun
+                            individual immunoterapiya kurslari.
+                        </p>
+                        <div class="service-arrow">→</div>
+                    </div>
+                    <div class="service-card reveal">
+                        <div class="service-icon">🌿</div>
+                        <div class="service-name" data-key="s3_name">
+                            Bronxial astma
+                        </div>
+                        <p class="service-desc" data-key="s3_desc">
+                            Astmani nazorat qilish, davolash va hayot sifatini
+                            yaxshilash bo'yicha to'liq dastur.
+                        </p>
+                        <div class="service-arrow">→</div>
+                    </div>
+                    <div class="service-card reveal">
+                        <div class="service-icon">🧬</div>
+                        <div class="service-name" data-key="s4_name">
+                            Immunitet holati tahlili
+                        </div>
+                        <p class="service-desc" data-key="s4_desc">
+                            Immunogramma va keng qamrovli immunologik
+                            tekshiruvlar orqali holat baholash.
+                        </p>
+                        <div class="service-arrow">→</div>
+                    </div>
+                    <div class="service-card reveal">
+                        <div class="service-icon">🌸</div>
+                        <div class="service-name" data-key="s5_name">
+                            Pollinoz (gul changiga
+                        </div>
+                        <p class="service-desc" data-key="s5_desc">
+                            Mavsumiy allergiya alomatlarini oldini olish va
+                            davolash bo'yicha maxsus yondashuv.
+                        </p>
+                        <div class="service-arrow">→</div>
+                    </div>
+                    <div class="service-card reveal">
+                        <div class="service-icon">👶</div>
+                        <div class="service-name" data-key="s6_name">
+                            Bolalar allergologiyasi
+                        </div>
+                        <p class="service-desc" data-key="s6_desc">
+                            0 yoshdan 18 yoshgacha bolalarda allergik
+                            kasalliklarni davolash bo'yicha maxsus yondashuv.
+                        </p>
+                        <div class="service-arrow">→</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONDITIONS -->
+        <section class="conditions" id="conditions">
+            <div class="container">
+                <div class="section-header text-center reveal">
+                    <div class="section-tag" data-key="cond_tag">
+                        Kasalliklar
+                    </div>
+                    <h2 class="section-title" data-key="cond_title">
+                        Davolanadigan kasalliklar
+                    </h2>
+                    <p class="section-sub" data-key="cond_sub">
+                        Keng ko'lamli allergik va immunologik kasalliklarni
+                        davolashda tajriba va yuqori samaradorlik
+                    </p>
+                </div>
+                <div class="conditions-grid reveal">
+                    <div class="condition-chip">
+                        <span class="chip-icon">🤧</span
+                        ><span class="chip-name" data-key="c1">Rinit</span>
+                    </div>
+                    <div class="condition-chip">
+                        <span class="chip-icon">👁️</span
+                        ><span class="chip-name" data-key="c2"
+                            >Kon'yunktivit</span
+                        >
+                    </div>
+                    <div class="condition-chip">
+                        <span class="chip-icon">🫁</span
+                        ><span class="chip-name" data-key="c3"
+                            >Bronxial astma</span
+                        >
+                    </div>
+                    <div class="condition-chip">
+                        <span class="chip-icon">🌿</span
+                        ><span class="chip-name" data-key="c4">Pollinoz</span>
+                    </div>
+                    <div class="condition-chip">
+                        <span class="chip-icon">🍞</span
+                        ><span class="chip-name" data-key="c5"
+                            >Oziq-ovqat allergiyasi</span
+                        >
+                    </div>
+                    <div class="condition-chip">
+                        <span class="chip-icon">💊</span
+                        ><span class="chip-name" data-key="c6"
+                            >Dori allergiyasi</span
+                        >
+                    </div>
+                    <div class="condition-chip">
+                        <span class="chip-icon">🐱</span
+                        ><span class="chip-name" data-key="c7"
+                            >Hayvon yuni allergiyasi</span
+                        >
+                    </div>
+                    <div class="condition-chip">
+                        <span class="chip-icon">🦟</span
+                        ><span class="chip-name" data-key="c8"
+                            >Hasharot chaqishi</span
+                        >
+                    </div>
+                    <div class="condition-chip">
+                        <span class="chip-icon">🌡️</span
+                        ><span class="chip-name" data-key="c9">Angioedema</span>
+                    </div>
+                    <div class="condition-chip">
+                        <span class="chip-icon">🔴</span
+                        ><span class="chip-name" data-key="c10">Urtikaria</span>
+                    </div>
+                    <div class="condition-chip">
+                        <span class="chip-icon">🧴</span
+                        ><span class="chip-name" data-key="c11"
+                            >Atopik dermatit</span
+                        >
+                    </div>
+                    <div class="condition-chip">
+                        <span class="chip-icon">⚡</span
+                        ><span class="chip-name" data-key="c12"
+                            >Anafila­ksiya</span
+                        >
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROCESS -->
+        <section class="process">
+            <div class="container">
+                <div class="section-header text-center reveal">
+                    <div class="section-tag" data-key="proc_tag">
+                        Qabul tartibi
+                    </div>
+                    <h2 class="section-title" data-key="proc_title">
+                        Qabul qanday kechadi?
+                    </h2>
+                </div>
+                <div class="process-steps reveal">
+                    <div class="process-step">
+                        <div class="step-num">01</div>
+                        <div class="step-title" data-key="p1_t">Murojaat</div>
+                        <p class="step-desc" data-key="p1_d">
+                            Telefon yoki sayt orqali qulay vaqtga yozilasiz
+                        </p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-num">02</div>
+                        <div class="step-title" data-key="p2_t">
+                            Tahlil va diagnostika
+                        </div>
+                        <p class="step-desc" data-key="p2_d">
+                            Zamonaviy usullar bilan to'liq tekshiruv o'tkaziladi
+                        </p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-num">03</div>
+                        <div class="step-title" data-key="p3_t">Diagnoz</div>
+                        <p class="step-desc" data-key="p3_d">
+                            Natijalar tahlil qilinib, aniq diagnoz qo'yiladi
+                        </p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-num">04</div>
+                        <div class="step-title" data-key="p4_t">
+                            Davolash rejasi
+                        </div>
+                        <p class="step-desc" data-key="p4_d">
+                            Sizga individual davolash dasturi tuziladi
+                        </p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-num">05</div>
+                        <div class="step-title" data-key="p5_t">Nazorat</div>
+                        <p class="step-desc" data-key="p5_d">
+                            Davolash jarayoni doimiy nazorat ostida olib
+                            boriladi
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS -->
+        <section class="testimonials">
+            <div class="container">
+                <div class="section-header text-center reveal">
+                    <div class="section-tag" data-key="test_tag">Fikrlar</div>
+                    <h2 class="section-title" data-key="test_title">
+                        Bemorlarimiz fikrlari
+                    </h2>
+                </div>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card reveal">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text" data-key="t1_text">
+                            "Doktor Ahmedov menga 5 yillik astma kasalligimdan
+                            xalos bo'lishimga yordam berdi. Immunoterapiya kursi
+                            ajoyib natija berdi. Hozir dori ichmasdan
+                            yashayapman!"
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">SM</div>
+                            <div>
+                                <div class="author-name">
+                                    Sarvinoz Mirzayeva
+                                </div>
+                                <div class="author-meta">Toshkent • 2024</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card reveal">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text" data-key="t2_text">
+                            "Farzandimning oziq-ovqat allergiyasini tashxis
+                            qilishda juda professional yondashuv bo'ldi. Doktor
+                            Xushnud juda sabr-toqatli va tushuntiruvchi. Tavsiya
+                            etaman!"
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">NK</div>
+                            <div>
+                                <div class="author-name">Nodira Karimova</div>
+                                <div class="author-meta">Samarqand • 2024</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card reveal">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text" data-key="t3_text">
+                            "Ko'p yillik pollinoz kasalligim uchun eng to'g'ri
+                            tashxis va davolash usulini taklif qildi. Har yilgi
+                            gul chang mavsumida endi hech qanday muammo yo'q!"
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">JU</div>
+                            <div>
+                                <div class="author-name">Jahongir Usmonov</div>
+                                <div class="author-meta">Buxoro • 2023</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="faq">
+            <div class="container">
+                <div class="section-header text-center reveal">
+                    <div class="section-tag" data-key="faq_tag">FAQ</div>
+                    <h2 class="section-title" data-key="faq_title">
+                        Ko'p beriladigan savollar
+                    </h2>
+                </div>
+                <div class="faq-list reveal" id="faqList"></div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="section-header reveal">
+                    <div class="section-tag" data-key="cont_tag">Aloqa</div>
+                    <h2 class="section-title" data-key="cont_title">
+                        Qabulga yozilish
+                    </h2>
+                </div>
+                <div class="contact-grid">
+                    <div class="reveal">
+                        <div class="contact-info-title" data-key="ci_title">
+                            Biz bilan bog'laning
+                        </div>
+                        <p class="contact-info-sub" data-key="ci_sub">
+                            Savol va takliflar uchun quyidagi manzil va telefon
+                            raqamlari orqali murojaat qiling.
+                        </p>
+                        <div class="contact-items">
+                            <div class="contact-item">
+                                <div class="ci-icon">📍</div>
+                                <div>
+                                    <div class="ci-label" data-key="ci_addr_l">
+                                        Manzil
+                                    </div>
+                                    <div class="ci-val">
+                                        Toshkent, Chilonzor tumani
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="ci-icon">📞</div>
+                                <div>
+                                    <div class="ci-label" data-key="ci_phone_l">
+                                        Telefon
+                                    </div>
+                                    <div class="ci-val">+998 90 123 45 67</div>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="ci-icon">⏰</div>
+                                <div>
+                                    <div class="ci-label" data-key="ci_hours_l">
+                                        Ish vaqti
+                                    </div>
+                                    <div class="ci-val" data-key="ci_hours_v">
+                                        Dush–Jum: 9:00–18:00 | Shan: 9:00–14:00
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="ci-icon">✉️</div>
+                                <div>
+                                    <div class="ci-label">Email</div>
+                                    <div class="ci-val">
+                                        Ahmedov.allergy@gmail.com
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hours-grid" id="hoursGrid"></div>
+                    </div>
+                    <div class="booking-form reveal">
+                        <div class="form-title" data-key="form_title">
+                            Qabul uchun so'rov
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label data-key="f_name">Ism</label>
+                                <input
+                                    type="text"
+                                    id="fName"
+                                    placeholder="Ismingiz"
+                                />
+                            </div>
+                            <div class="form-group">
+                                <label data-key="f_phone">Telefon</label>
+                                <input
+                                    type="tel"
+                                    id="fPhone"
+                                    placeholder="+998 90 000 00 00"
+                                />
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label data-key="f_date">Sana</label>
+                                <input type="date" id="fDate" />
+                            </div>
+                            <div class="form-group">
+                                <label data-key="f_time">Vaqt</label>
+                                <select id="fTime">
+                                    <option>09:00</option>
+                                    <option>09:30</option>
+                                    <option>10:00</option>
+                                    <option>10:30</option>
+                                    <option>11:00</option>
+                                    <option>11:30</option>
+                                    <option>14:00</option>
+                                    <option>14:30</option>
+                                    <option>15:00</option>
+                                    <option>15:30</option>
+                                    <option>16:00</option>
+                                    <option>16:30</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group" style="margin-bottom: 1rem">
+                            <label data-key="f_reason">Murojaat sababi</label>
+                            <select id="fReason">
+                                <option data-key="fr1">
+                                    Allergiya tekshiruvi
+                                </option>
+                                <option data-key="fr2">Bronxial astma</option>
+                                <option data-key="fr3">Immunoterapiya</option>
+                                <option data-key="fr4">
+                                    Bolalar allergologiyasi
+                                </option>
+                                <option data-key="fr5">Boshqa</option>
+                            </select>
+                        </div>
+                        <div class="form-group" style="margin-bottom: 1rem">
+                            <label data-key="f_msg">Xabar (ixtiyoriy)</label>
+                            <textarea
+                                id="fMsg"
+                                placeholder="Qo'shimcha ma'lumot..."
+                            ></textarea>
+                        </div>
+                        <button
+                            class="form-submit"
+                            onclick="submitForm()"
+                            data-key="f_submit"
+                        >
+                            Yozilish →
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MAP -->
+        <section class="map-section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <div class="section-tag">Manzil</div>
+                    <h2 class="section-title">Bizni xaritada toping</h2>
+                </div>
+            </div>
+            <div class="map-wrapper reveal">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d475.26027437462443!2d69.19297925778365!3d41.29012141249527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b007e2ac277%3A0x83fc525ce72adbfb!2z0JrQntCc0J_Qm9CV0JrQodCc0JXQlC3QmtCb0JjQndCY0Jo!5e1!3m2!1sru!2s!4v1778096681515!5m2!1sru!2s"
+                    width="100%"
+                    height="450"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                >
+                </iframe>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-brand">
+                    <div class="nav-logo"><span>Dr. </span>Ahmedov</div>
+                    <p data-key="footer_desc">
+                        Allergiya va immunologiya sohasida ishonchli mutaxassis.
+                        Zamonaviy davolash, individual yondashuv.
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4 data-key="footer_nav">Sahifalar</h4>
+                    <a href="#about" data-key="nav_about">Haqida</a>
+                    <a href="#services" data-key="nav_services">Xizmatlar</a>
+                    <a href="#conditions" data-key="nav_conditions"
+                        >Kasalliklar</a
+                    >
+                    <a href="#contact" data-key="nav_contact">Aloqa</a>
+                </div>
+                <div class="footer-col">
+                    <h4 data-key="footer_serv">Xizmatlar</h4>
+                    <a href="#" data-key="s1_name">Diagnostika</a>
+                    <a href="#" data-key="s2_name">Immunoterapiya</a>
+                    <a href="#" data-key="s3_name">Astma</a>
+                    <a href="#" data-key="s6_name">Bolalar</a>
+                </div>
+                <div class="footer-col">
+                    <h4 data-key="footer_contact">Aloqa</h4>
+                    <p>+998 90 123 45 67</p>
+                    <p>Ahmedov.allergy@gmail.com</p>
+                    <p>Toshkent, Chilonzor</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-copy" data-key="footer_copy">
+                    © 2025 Dr. Xushnud Ahmedov. Barcha huquqlar himoyalangan.
+                </div>
+                <div class="footer-copy" data-key="footer_copy2">
+                    Allergolog-immunolog, Toshkent
+                </div>
+            </div>
+        </footer>
+
+        <!-- TOAST -->
+        <div class="toast" id="toast"></div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
