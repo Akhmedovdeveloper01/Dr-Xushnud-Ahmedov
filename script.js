@@ -3,32 +3,32 @@ const i18n = {
   uz: {
     nav_about: 'Haqida', nav_services: 'Xizmatlar', nav_conditions: 'Kasalliklar',
     nav_contact: 'Aloqa', nav_cta: 'Qabulga yozilish',
-    hero_badge: 'Mutaxassis Allergolog',
-    hero_sub: 'Allergiya va immunologiya sohasida 20 yillik tajriba. Zamonaviy diagnostika usullari va individual yondashuv bilan har bir bemorga eng yaxshi natijani ta\'minlaymiz.',
+    hero_badge: 'Oliy toifali allergolog',
+    hero_sub: 'Allergologiya sohasida 27 yillik tajriba. Complex Med klinikasi allergologi. Har bir bemorga individual yondashuv va zamonaviy davolash usullari bilan maksimal natija kafolatlanadi.',
     stat1: 'Yil tajriba', stat2: 'Bemorlar', stat3: '% Mamnunlik',
     hero_btn1: 'Qabulga yozilish', hero_btn2: 'Batafsil',
-    doc_title: 'Allergolog-immunolog', doc_edu: 'ToshDTI',
+    doc_title: 'Oliy toifali allergolog', doc_edu: '2-ToshDTI',
     rating: 'Reyting', cert_label: 'Sertifikat',
     about_tag: 'Doktor haqida',
     about_title: 'Allergiya bilan kurashishda ishonchli hamkoringiz',
-    about_text: 'Doktor Xushnud Ahmedov — O\'zbekiston Respublikasining yetakchi allergolog-immunolog mutaxassislaridan biri. U Toshkent Davlat Tibbiyot Institutini bitirgan va Yevropa allergologiya markazlarida malaka oshirgan. Har bir bemorga individual yondashuv, zamonaviy diagnostika va samarali davolash usullari taklif etiladi.',
-    cred1_t: 'ToshDTI — Oliy tibbiy ma\'lumot', cred1_d: 'Pediatriya va umumiy tibbiyot bo\'yicha diplom',
-    cred2_t: 'Yevropa allergologiya akademiyasi', cred2_d: 'Malaka oshirish kurslari, 2019',
-    cred3_t: 'Jahon allergologiya tashkiloti a\'zosi', cred3_d: 'WAO sertifikati, 2020',
-    cred4_t: 'Immunoterapiya bo\'yicha mutaxassis', cred4_d: 'SCIT va SLIT usullarida tajriba',
+    about_text: 'Axmedov Xushnud Saparbayevich — O\'zbekiston Sog\'liqni saqlash vazirligi Respublika ixtisoslashtirilgan ilmiy-amaliy tibbiyot markazi (Dermato-venerologiya va kosmetologiya) ning oliy toifali allergologi. 1997 yildan beri faoliyat yuritib, 27 yillik klinikalik tajribaga ega. Respublika allergologiya markazida 12 yil ishlagan, TMA da o\'qituvchi bo\'lgan va Respublika ilmiy ixtisoslashtirilgan allergologiya markazi direktor o\'rinbosari lavozimlarida xizmat qilgan.',
+    cred1_t: '2-ToshDTI — Oliy tibbiy ta\'lim (1997–2006)', cred1_d: 'Tibbiyot instituti bitiruvchisi va klinik ordinaturasi',
+    cred2_t: 'Respublika allergologiya markazi (2006–2018)', cred2_d: 'TMA Allergologiya va immunologiya kafedrasi assistenti (2018–2019)',
+    cred3_t: 'Direktor o\'rinbosari & Bosh shifokor (2019–2022)', cred3_d: 'Respublika ilmiy ixtisoslashtirilgan allergologiya markazi va Global Medical Center',
+    cred4_t: 'Melbourne, Avstraliya — "Global Education Award" (2021)', cred4_d: 'ToshTibbiyot Malaka oshirish: 2010, 2013, 2018, 2024',
     serv_tag: 'Xizmatlar', serv_title: 'Taklif etilayotgan xizmatlar',
     serv_sub: 'Diagnostikadan davolashgacha — zamonaviy tibbiyot usullarida to\'liq kompleks yordam',
     s1_name: 'Allergiya diagnostikasi', s1_desc: 'Teri testlari, qon tekshiruvi va provokatsiya testlari yordamida allergenni aniq aniqlash.',
     s2_name: 'Immunoterapiya (ASIT)', s2_desc: 'Allergenga sezuvchanlikni kamaytirish uchun individual immunoterapiya kurslari.',
     s3_name: 'Bronxial astma', s3_desc: 'Astmani nazorat qilish, davolash va hayot sifatini yaxshilash bo\'yicha to\'liq dastur.',
-    s4_name: 'Immunitet holati tahlili', s4_desc: 'Immunogramma va keng qamrovli immunologik tekshiruvlar orqali holat baholash.',
+    s4_name: 'Teri allergik kasalliklari', s4_desc: 'Atopik dermatit, allergik dermatit, urtikaria va boshqa allergik teri muammolarini davolash.',
     s5_name: 'Pollinoz (gul changiga)', s5_desc: 'Mavsumiy allergiya alomatlarini oldini olish va davolash bo\'yicha maxsus yondashuv.',
-    s6_name: 'Bolalar allergologiyasi', s6_desc: '0 yoshdan 18 yoshgacha bolalarda allergik kasalliklarni davolash bo\'yicha maxsus yondashuv.',
+    s6_name: 'Og\'ir allergik reaksiyalar', s6_desc: 'Stivens-Jonson sindromi, Layell sindromi, toksidermiya va anafilaksiyani davolash.',
     cond_tag: 'Kasalliklar', cond_title: 'Davolanadigan kasalliklar',
-    cond_sub: 'Keng ko\'lamli allergik va immunologik kasalliklarni davolashda tajriba va yuqori samaradorlik',
-    c1:'Rinit',c2:'Kon\'yunktivit',c3:'Bronxial astma',c4:'Pollinoz',c5:'Oziq-ovqat allergiyasi',
-    c6:'Dori allergiyasi',c7:'Hayvon yuni allergiyasi',c8:'Hasharot chaqishi',c9:'Angioedema',
-    c10:'Urtikaria',c11:'Atopik dermatit',c12:'Anafila­ksiya',
+    cond_sub: 'Keng ko\'lamli allergik kasalliklarni davolashda 27 yillik tajriba va yuqori samaradorlik',
+    c1:'Atopik dermatit',c2:'Allergik dermatit',c3:'Urtikaria',c4:'Kvinke shishi',c5:'Dori allergiyasi',
+    c6:'Oziq-ovqat allergiyasi',c7:'Allergik rinit',c8:'Allergik kon\'yunktivit',c9:'Bronxial astma',
+    c10:'Allergik bronxit',c11:'Toksidermiya',c12:'Stivens-Jonson sindromi',c13:'Layell sindromi',c14:'Pollinoz',
     proc_tag:'Qabul tartibi', proc_title:'Qabul qanday kechadi?',
     p1_t:'Murojaat',p1_d:'Telefon yoki sayt orqali qulay vaqtga yozilasiz',
     p2_t:'Tahlil va diagnostika',p2_d:'Zamonaviy usullar bilan to\'liq tekshiruv o\'tkaziladi',
@@ -36,7 +36,7 @@ const i18n = {
     p4_t:'Davolash rejasi',p4_d:'Sizga individual davolash dasturi tuziladi',
     p5_t:'Nazorat',p5_d:'Davolash jarayoni doimiy nazorat ostida olib boriladi',
     test_tag:'Fikrlar', test_title:'Bemorlarimiz fikrlari',
-    t1_text:'"Doktor Ahmedov menga 5 yillik astma kasalligimdan xalos bo\'lishimga yordam berdi. Immunoterapiya kursi ajoyib natija berdi. Hozir dori ichmasdan yashayapman!"',
+    t1_text:'"Doktor Axmedov menga 5 yillik astma kasalligimdan xalos bo\'lishimga yordam berdi. Immunoterapiya kursi ajoyib natija berdi. Hozir dori ichmasdan yashayapman!"',
     t2_text:'"Farzandimning oziq-ovqat allergiyasini tashxis qilishda juda professional yondashuv bo\'ldi. Doktor Xushnud juda sabr-toqatli va tushuntiruvchi. Tavsiya etaman!"',
     t3_text:'"Ko\'p yillik pollinoz kasalligim uchun eng to\'g\'ri tashxis va davolash usulini taklif qildi. Har yilgi gul chang mavsumida endi hech qanday muammo yo\'q!"',
     faq_tag:'FAQ', faq_title:'Ko\'p beriladigan savollar',
@@ -48,11 +48,11 @@ const i18n = {
     form_title:'Qabul uchun so\'rov',
     f_name:'Ism', f_phone:'Telefon', f_date:'Sana', f_time:'Vaqt', f_reason:'Murojaat sababi', f_msg:'Xabar (ixtiyoriy)',
     f_submit:'Yozilish →',
-    fr1:'Allergiya tekshiruvi',fr2:'Bronxial astma',fr3:'Immunoterapiya',fr4:'Bolalar allergologiyasi',fr5:'Boshqa',
+    fr1:'Allergiya tekshiruvi',fr2:'Bronxial astma',fr3:'Immunoterapiya',fr4:'Teri allergiyasi',fr5:'Boshqa',
     footer_nav:'Sahifalar', footer_serv:'Xizmatlar', footer_contact:'Aloqa',
-    footer_desc:'Allergiya va immunologiya sohasida ishonchli mutaxassis. Zamonaviy davolash, individual yondashuv.',
-    footer_copy:'© 2026 Dr. Xushnud Ahmedov. Barcha huquqlar himoyalangan.',
-    footer_copy2:'Allergolog-immunolog, Toshkent',
+    footer_desc:'Complex Med klinikasi oliy toifali allergologi. 27 yillik klinikalik tajriba.',
+    footer_copy:'© 2026 Dr. Xushnud Axmedov. Barcha huquqlar himoyalangan.',
+    footer_copy2:'Complex Med klinikasi, Toshkent',
     days:['Du','Se','Ch','Pa','Ju','Sh','Ya'],
     hours:['9–18','9–18','9–18','9–18','9–18','9–14','Dam'],
     toast_success:'Muvaffaqiyatli yuborildi! Tez orada siz bilan bog\'lanamiz.',
@@ -67,31 +67,31 @@ const i18n = {
   ru: {
     nav_about:'О враче', nav_services:'Услуги', nav_conditions:'Заболевания',
     nav_contact:'Контакты', nav_cta:'Записаться',
-    hero_badge:'Врач-аллерголог',
-    hero_sub:'20 лет опыта в аллергологии и иммунологии. Современная диагностика и индивидуальный подход к каждому пациенту для достижения наилучших результатов.',
+    hero_badge:'Аллерголог высшей категории',
+    hero_sub:'27 лет опыта в аллергологии. Аллерголог клиники Complex Med. Современная диагностика и индивидуальный подход к каждому пациенту.',
     stat1:'Лет опыта', stat2:'Пациентов', stat3:'% Довольных',
     hero_btn1:'Записаться на приём', hero_btn2:'Подробнее',
-    doc_title:'Аллерголог-иммунолог', doc_edu:'ТашМА', rating:'Рейтинг', cert_label:'Сертификат',
+    doc_title:'Аллерголог высшей категории', doc_edu:'2-ТашМИ', rating:'Рейтинг', cert_label:'Сертификат',
     about_tag:'О докторе',
     about_title:'Ваш надёжный партнёр в борьбе с аллергией',
-    about_text:'Доктор Хушнуд Ахмедов — один из ведущих специалистов в области аллергологии и иммунологии Узбекистана. Окончил Ташкентский государственный медицинский институт и прошёл стажировку в европейских центрах аллергологии.',
-    cred1_t:'ТашМА — Высшее медицинское образование', cred1_d:'Диплом по педиатрии и общей медицине',
-    cred2_t:'Европейская академия аллергологии', cred2_d:'Повышение квалификации, 2019',
-    cred3_t:'Член Всемирной организации аллергологии', cred3_d:'Сертификат WAO, 2020',
-    cred4_t:'Специалист по иммунотерапии', cred4_d:'Опыт SCIT и SLIT методов',
+    about_text:'Ахмедов Хушнуд Сапарбаевич — аллерголог высшей категории клиники Complex Med. Имеет 27 лет клинического опыта с 1997 года. Работал в Республиканском аллергологическом центре 12 лет, был ассистентом кафедры TMA, заместителем директора Республиканского научно-специализированного аллергологического центра.',
+    cred1_t:'2-ТашМИ — Высшее медицинское образование (1997–2006)', cred1_d:'Окончил институт и клиническую ординатуру по аллергологии',
+    cred2_t:'Республиканский аллергологический центр (2006–2018)', cred2_d:'Ассистент кафедры аллергологии и иммунологии ТМА (2018–2019)',
+    cred3_t:'Зам. директора & Главный врач (2019–2022)', cred3_d:'Респ. научно-специализированный аллергологический центр и Global Medical Center',
+    cred4_t:'Мельбурн, Австралия — «Global Education Award» (2021)', cred4_d:'Повышение квалификации ТашИУВ: 2010, 2013, 2018, 2024',
     serv_tag:'Услуги', serv_title:'Предоставляемые услуги',
     serv_sub:'От диагностики до лечения — комплексная помощь по современным методикам медицины',
     s1_name:'Диагностика аллергии', s1_desc:'Точное определение аллергена с помощью кожных тестов, анализа крови и провокационных тестов.',
     s2_name:'Иммунотерапия (АСИТ)', s2_desc:'Индивидуальные курсы иммунотерапии для снижения чувствительности к аллергену.',
     s3_name:'Бронхиальная астма', s3_desc:'Комплексная программа по контролю, лечению астмы и улучшению качества жизни.',
-    s4_name:'Анализ иммунного статуса', s4_desc:'Оценка состояния через иммунограмму и расширенные иммунологические исследования.',
+    s4_name:'Аллергические заболевания кожи', s4_desc:'Лечение атопического дерматита, аллергического дерматита, крапивницы и других кожных аллергий.',
     s5_name:'Поллиноз (аллергия на пыльцу)', s5_desc:'Специальный подход к профилактике и лечению симптомов сезонной аллергии.',
-    s6_name:'Детская аллергология', s6_desc:'Специальный подход к лечению аллергических заболеваний у детей от 0 до 18 лет.',
+    s6_name:'Тяжёлые аллергические реакции', s6_desc:'Лечение синдрома Стивенса-Джонсона, синдрома Лайелла, токсикодермии и анафилаксии.',
     cond_tag:'Заболевания', cond_title:'Лечимые заболевания',
-    cond_sub:'Опыт и высокая эффективность в лечении широкого спектра аллергических и иммунологических заболеваний',
-    c1:'Ринит',c2:'Конъюнктивит',c3:'Бронхиальная астма',c4:'Поллиноз',c5:'Пищевая аллергия',
-    c6:'Лекарственная аллергия',c7:'Аллергия на животных',c8:'Укусы насекомых',c9:'Ангиоотёк',
-    c10:'Крапивница',c11:'Атопический дерматит',c12:'Анафилаксия',
+    cond_sub:'27 лет опыта и высокая эффективность в лечении широкого спектра аллергических заболеваний',
+    c1:'Атопический дерматит',c2:'Аллергический дерматит',c3:'Крапивница',c4:'Отёк Квинке',c5:'Лекарственная аллергия',
+    c6:'Пищевая аллергия',c7:'Аллергический ринит',c8:'Аллергический конъюнктивит',c9:'Бронхиальная астма',
+    c10:'Аллергический бронхит',c11:'Токсикодермия',c12:'Синдром Стивенса-Джонсона',c13:'Синдром Лайелла',c14:'Поллиноз',
     proc_tag:'Порядок приёма', proc_title:'Как проходит приём?',
     p1_t:'Обращение',p1_d:'Записываетесь на удобное время по телефону или сайту',
     p2_t:'Анализы и диагностика',p2_d:'Проводится полное обследование современными методами',
@@ -111,11 +111,11 @@ const i18n = {
     form_title:'Запрос на приём',
     f_name:'Имя', f_phone:'Телефон', f_date:'Дата', f_time:'Время', f_reason:'Причина обращения', f_msg:'Сообщение (необязательно)',
     f_submit:'Записаться →',
-    fr1:'Диагностика аллергии',fr2:'Бронхиальная астма',fr3:'Иммунотерапия',fr4:'Детская аллергология',fr5:'Другое',
+    fr1:'Диагностика аллергии',fr2:'Бронхиальная астма',fr3:'Иммунотерапия',fr4:'Кожная аллергия',fr5:'Другое',
     footer_nav:'Страницы', footer_serv:'Услуги', footer_contact:'Контакты',
-    footer_desc:'Надёжный специалист в области аллергологии и иммунологии. Современное лечение, индивидуальный подход.',
+    footer_desc:'Аллерголог высшей категории клиники Complex Med. 27 лет клинического опыта.',
     footer_copy:'© 2026 Др. Хушнуд Ахмедов. Все права защищены.',
-    footer_copy2:'Аллерголог-иммунолог, Ташкент',
+    footer_copy2:'Complex Med клиника, Ташкент',
     days:['Пн','Вт','Ср','Чт','Пт','Сб','Вс'],
     hours:['9–18','9–18','9–18','9–18','9–18','9–14','Вых'],
     toast_success:'Успешно отправлено! Мы свяжемся с вами в ближайшее время.',
@@ -130,31 +130,31 @@ const i18n = {
   en: {
     nav_about:'About', nav_services:'Services', nav_conditions:'Conditions',
     nav_contact:'Contact', nav_cta:'Book Appointment',
-    hero_badge:'Specialist Allergologist',
-    hero_sub:'20 years of experience in allergology and immunology. Modern diagnostics and personalized approach ensure the best outcomes for every patient.',
+    hero_badge:'Allergist of the Highest Category',
+    hero_sub:'27 years of experience in allergology. Allergist at Complex Med Clinic.',
     stat1:'Years experience', stat2:'Patients', stat3:'% Satisfaction',
     hero_btn1:'Book Appointment', hero_btn2:'Learn More',
-    doc_title:'Allergologist-Immunologist', doc_edu:'TashMI', rating:'Rating', cert_label:'Certificate',
+    doc_title:'Allergist of the Highest Category', doc_edu:'2nd TashSMI', rating:'Rating', cert_label:'Certificate',
     about_tag:'About Doctor',
     about_title:'Your trusted partner in fighting allergies',
-    about_text:'Dr. Xushnud Ahmedov is one of the leading allergologist-immunologists in Uzbekistan. He graduated from Tashkent State Medical Institute and completed advanced training at European allergy centers. Every patient receives an individual approach with modern diagnostics and effective treatment.',
-    cred1_t:'TashMI — Higher Medical Education', cred1_d:'Diploma in Pediatrics and General Medicine',
-    cred2_t:'European Academy of Allergology', cred2_d:'Advanced training courses, 2019',
-    cred3_t:'World Allergy Organization Member', cred3_d:'WAO Certificate, 2020',
-    cred4_t:'Immunotherapy Specialist', cred4_d:'Experience in SCIT and SLIT methods',
+    about_text:'Axmedov Xushnud Saparbaevich is an allergist of the highest category at Complex Med Clinic. With 27 years of clinical experience since 1997, he served at the Republican Allergological Center for 12 years, as an assistant professor at TMA, and as Deputy Director of the Republican Scientific-Specialized Allergological Center.',
+    cred1_t:'2nd TashSMI — Higher Medical Education (1997–2006)', cred1_d:'Medical degree and clinical residency in allergology',
+    cred2_t:'Republican Allergological Center (2006–2018)', cred2_d:'Assistant, Dept. of Allergology & Immunology, TMA (2018–2019)',
+    cred3_t:'Deputy Director & Chief Doctor (2019–2022)', cred3_d:'Republican Scientific-Specialized Allergological Center & Global Medical Center',
+    cred4_t:'Melbourne, Australia — "Global Education Award" (2021)', cred4_d:'Advanced training at TashIUV: 2010, 2013, 2018, 2024',
     serv_tag:'Services', serv_title:'Services Offered',
     serv_sub:'From diagnosis to treatment — comprehensive care using modern medical methods',
     s1_name:'Allergy Diagnostics', s1_desc:'Accurate allergen identification through skin tests, blood tests, and provocation tests.',
     s2_name:'Immunotherapy (ASIT)', s2_desc:'Individual immunotherapy courses to reduce allergen sensitivity.',
     s3_name:'Bronchial Asthma', s3_desc:'Comprehensive program for asthma control, treatment, and improved quality of life.',
-    s4_name:'Immune Status Analysis', s4_desc:'State assessment through immunogram and comprehensive immunological examinations.',
+    s4_name:'Allergic Skin Diseases', s4_desc:'Treatment of atopic dermatitis, allergic dermatitis, urticaria and other skin allergy conditions.',
     s5_name:'Pollinosis (Hay Fever)', s5_desc:'Special approach to preventing and treating seasonal allergy symptoms.',
-    s6_name:'Pediatric Allergology', s6_desc:'Special approach to treating allergic diseases in children aged 0–18 years.',
+    s6_name:'Severe Allergic Reactions', s6_desc:'Treatment of Stevens-Johnson syndrome, Lyell syndrome, toxicoderma and anaphylaxis.',
     cond_tag:'Conditions', cond_title:'Treatable Conditions',
-    cond_sub:'Experience and high efficacy in treating a wide range of allergic and immunological diseases',
-    c1:'Rhinitis',c2:'Conjunctivitis',c3:'Bronchial Asthma',c4:'Pollinosis',c5:'Food Allergy',
-    c6:'Drug Allergy',c7:'Pet Allergy',c8:'Insect Stings',c9:'Angioedema',
-    c10:'Urticaria',c11:'Atopic Dermatitis',c12:'Anaphylaxis',
+    cond_sub:'27 years of experience and high efficacy in treating a wide range of allergic diseases',
+    c1:'Atopic Dermatitis',c2:'Allergic Dermatitis',c3:'Urticaria',c4:'Quincke\'s Edema',c5:'Drug Allergy',
+    c6:'Food Allergy',c7:'Allergic Rhinitis',c8:'Allergic Conjunctivitis',c9:'Bronchial Asthma',
+    c10:'Allergic Bronchitis',c11:'Toxicoderma',c12:'Stevens-Johnson Syndrome',c13:'Lyell Syndrome',c14:'Pollinosis',
     proc_tag:'Process', proc_title:'How does the appointment go?',
     p1_t:'Request',p1_d:'Book a convenient time by phone or website',
     p2_t:'Tests & Diagnostics',p2_d:'Full examination using modern methods',
@@ -162,7 +162,7 @@ const i18n = {
     p4_t:'Treatment Plan',p4_d:'An individual treatment program is designed for you',
     p5_t:'Monitoring',p5_d:'Treatment process is conducted under constant supervision',
     test_tag:'Reviews', test_title:'What our patients say',
-    t1_text:'"Dr. Ahmedov helped me overcome asthma that had troubled me for 5 years. The immunotherapy course gave amazing results. I now live without medication!"',
+    t1_text:'"Dr. Axmedov helped me overcome asthma that had troubled me for 5 years. The immunotherapy course gave amazing results. I now live without medication!"',
     t2_text:'"Diagnosing my child\'s food allergy was handled very professionally. Dr. Xushnud is very patient and explains everything clearly. Highly recommend!"',
     t3_text:'"He offered the most accurate diagnosis and treatment for my years-long hay fever. During pollen season now, there are absolutely no problems!"',
     faq_tag:'FAQ', faq_title:'Frequently Asked Questions',
@@ -174,11 +174,11 @@ const i18n = {
     form_title:'Appointment Request',
     f_name:'Name', f_phone:'Phone', f_date:'Date', f_time:'Time', f_reason:'Reason for visit', f_msg:'Message (optional)',
     f_submit:'Book Appointment →',
-    fr1:'Allergy diagnostics',fr2:'Bronchial asthma',fr3:'Immunotherapy',fr4:'Pediatric allergology',fr5:'Other',
+    fr1:'Allergy diagnostics',fr2:'Bronchial asthma',fr3:'Immunotherapy',fr4:'Skin allergy',fr5:'Other',
     footer_nav:'Pages', footer_serv:'Services', footer_contact:'Contact',
-    footer_desc:'Trusted specialist in allergology and immunology. Modern treatment, individual approach.',
-    footer_copy:'© 2026 Dr. Xushnud Ahmedov. All rights reserved.',
-    footer_copy2:'Allergologist-Immunologist, Tashkent',
+    footer_desc:'Allergist of the highest category, Complex Med Clinic. 27 years of experience.',
+    footer_copy:'© 2026 Dr. Xushnud Axmedov. All rights reserved.',
+    footer_copy2:'Complex Med Clinic, Tashkent',
     days:['Mon','Tue','Wed','Thu','Fri','Sat','Sun'],
     hours:['9–18','9–18','9–18','9–18','9–18','9–14','Off'],
     toast_success:'Successfully submitted! We will contact you shortly.',
@@ -328,11 +328,31 @@ function showToast(msg) {
   setTimeout(() => t.classList.remove('show'), 4000);
 }
 
+// ---- CERTIFICATE LIGHTBOX ----
+function openCert(btn) {
+  const img = btn.closest('.cert-img-wrap').querySelector('img');
+  if (!img || img.style.display === 'none') return;
+  const lb = document.getElementById('certLightbox');
+  document.getElementById('certLightboxImg').src = img.src;
+  lb.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+function closeCert() {
+  document.getElementById('certLightbox').classList.remove('active');
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeCert(); });
+
 // ---- SCROLL TO ----
 function scrollTo(id) {
   document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
 }
-function toggleMobile() {}
+function toggleMobile() {
+  const nav = document.querySelector('.nav-links');
+  const btn = document.querySelector('.mobile-menu-btn');
+  const isOpen = nav.classList.toggle('mobile-open');
+  btn.textContent = isOpen ? '✕' : '☰';
+}
 
 // ---- INIT ----
 document.addEventListener('DOMContentLoaded', () => {
@@ -349,4 +369,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const mm = String(today.getMonth()+1).padStart(2,'0');
   const dd = String(today.getDate()+1).padStart(2,'0');
   document.getElementById('fDate').value = `${yyyy}-${mm}-${dd}`;
+
+  // Close mobile menu on link click
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    a.addEventListener('click', () => {
+      document.querySelector('.nav-links').classList.remove('mobile-open');
+      document.querySelector('.mobile-menu-btn').textContent = '☰';
+    });
+  });
 });
