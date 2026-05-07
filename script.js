@@ -406,12 +406,9 @@ function showToast(msg) {
 }
 
 // ---- CERTIFICATE LIGHTBOX ----
-function openCert(btn) {
-  const img = btn.closest('.cert-img-wrap').querySelector('img');
-  if (!img || img.style.display === 'none') return;
-  const lb = document.getElementById('certLightbox');
-  document.getElementById('certLightboxImg').src = img.src;
-  lb.classList.add('active');
+function openCertImg(src) {
+  document.getElementById('certLightboxImg').src = src;
+  document.getElementById('certLightbox').classList.add('active');
   document.body.style.overflow = 'hidden';
 }
 function closeCert() {
