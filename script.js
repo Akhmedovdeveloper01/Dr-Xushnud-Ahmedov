@@ -2,7 +2,7 @@
 const i18n = {
   uz: {
     nav_about: 'Haqida', nav_services: 'Xizmatlar', nav_conditions: 'Kasalliklar',
-    nav_contact: 'Aloqa', nav_cta: 'Qabulga yozilish',
+    nav_certs: 'Sertifikatlar', nav_contact: 'Aloqa', nav_cta: 'Qabulga yozilish',
     hero_badge: 'Oliy toifali allergolog',
     hero_sub: 'Allergologiya sohasida 27 yillik tajriba. Complex Med klinikasi allergologi. Har bir bemorga individual yondashuv va zamonaviy davolash usullari bilan maksimal natija kafolatlanadi.',
     stat1: 'Yil tajriba', stat2: 'Bemorlar', stat3: '% Mamnunlik',
@@ -12,21 +12,24 @@ const i18n = {
     about_tag: 'Doktor haqida',
     about_title: 'Allergiya bilan kurashishda ishonchli hamkoringiz',
     about_text: 'Axmedov Xushnud Saparbayevich — O\'zbekiston Sog\'liqni saqlash vazirligi Respublika ixtisoslashtirilgan ilmiy-amaliy tibbiyot markazi (Dermato-venerologiya va kosmetologiya) ning oliy toifali allergologi. 1997 yildan beri faoliyat yuritib, 27 yillik klinikalik tajribaga ega. Respublika allergologiya markazida 12 yil ishlagan, TMA da o\'qituvchi bo\'lgan va Respublika ilmiy ixtisoslashtirilgan allergologiya markazi direktor o\'rinbosari lavozimlarida xizmat qilgan.',
+    tl_tag1: "Ta'lim", tl_tag2: 'Ish faoliyati', tl_tag3: 'Rahbarlik', tl_tag4: 'Xalqaro mukofot', tl_tag5: 'Hozirgi ish joyi',
     cred1_t: '2-ToshDTI — Oliy tibbiy ta\'lim (1997–2006)', cred1_d: 'Tibbiyot instituti bitiruvchisi va klinik ordinaturasi',
     cred2_t: 'Respublika allergologiya markazi (2006–2018)', cred2_d: 'TMA Allergologiya va immunologiya kafedrasi assistenti (2018–2019)',
     cred3_t: 'Direktor o\'rinbosari & Bosh shifokor (2019–2022)', cred3_d: 'Respublika ilmiy ixtisoslashtirilgan allergologiya markazi va Global Medical Center',
     cred4_t: 'Melbourne, Avstraliya — "Global Education Award" (2021)', cred4_d: 'ToshTibbiyot Malaka oshirish: 2010, 2013, 2018, 2024',
+    cred5_t: 'Complex Med klinikasi — Oliy toifali allergolog', cred5_d: 'Complex Med klinikasi, Toshkent',
+    video_tag: 'Video', video_title: "Doktor haqida ko'proq bilib oling", video_sub: "Allergologiya va immunologiya sohasidagi tajriba, davolash usullari va bemorlar bilan ishlash haqida batafsil ma'lumot.",
     serv_tag: 'Xizmatlar', serv_title: 'Taklif etilayotgan xizmatlar',
     serv_sub: 'Diagnostikadan davolashgacha — zamonaviy tibbiyot usullarida to\'liq kompleks yordam',
     s1_name: 'Allergiya diagnostikasi', s1_desc: 'Teri testlari, qon tekshiruvi va provokatsiya testlari yordamida allergenni aniq aniqlash.',
     s2_name: 'Immunoterapiya (ASIT)', s2_desc: 'Allergenga sezuvchanlikni kamaytirish uchun individual immunoterapiya kurslari.',
     s3_name: 'Bronxial astma', s3_desc: 'Astmani nazorat qilish, davolash va hayot sifatini yaxshilash bo\'yicha to\'liq dastur.',
-    s4_name: 'Teri allergik kasalliklari', s4_desc: 'Atopik dermatit, allergik dermatit, urtikaria va boshqa allergik teri muammolarini davolash.',
+    s4_name: 'Teri allergik kasalliklari', s4_desc: 'Atopik dermatit, allergik dermatit, Eshakemi va boshqa allergik teri muammolarini davolash.',
     s5_name: 'Pollinoz (gul changiga)', s5_desc: 'Mavsumiy allergiya alomatlarini oldini olish va davolash bo\'yicha maxsus yondashuv.',
     s6_name: 'Og\'ir allergik reaksiyalar', s6_desc: 'Stivens-Jonson sindromi, Layell sindromi, toksidermiya va anafilaksiyani davolash.',
     cond_tag: 'Kasalliklar', cond_title: 'Davolanadigan kasalliklar',
     cond_sub: 'Keng ko\'lamli allergik kasalliklarni davolashda 27 yillik tajriba va yuqori samaradorlik',
-    c1:'Atopik dermatit',c2:'Allergik dermatit',c3:'Urtikaria',c4:'Kvinke shishi',c5:'Dori allergiyasi',
+    c1:'Atopik dermatit',c2:'Allergik dermatit',c3:'Eshakemi',c4:'Kvinke shishi',c5:'Dori allergiyasi',
     c6:'Oziq-ovqat allergiyasi',c7:'Allergik rinit',c8:'Allergik kon\'yunktivit',c9:'Bronxial astma',
     c10:'Allergik bronxit',c11:'Toksidermiya',c12:'Stivens-Jonson sindromi',c13:'Layell sindromi',c14:'Pollinoz',
     proc_tag:'Qabul tartibi', proc_title:'Qabul qanday kechadi?',
@@ -49,6 +52,12 @@ const i18n = {
     f_name:'Ism', f_phone:'Telefon', f_date:'Sana', f_time:'Vaqt', f_reason:'Murojaat sababi', f_msg:'Xabar (ixtiyoriy)',
     f_submit:'Yozilish →',
     fr1:'Allergiya tekshiruvi',fr2:'Bronxial astma',fr3:'Immunoterapiya',fr4:'Teri allergiyasi',fr5:'Boshqa',
+    cert_tag: 'Hujjatlar', cert_section_title: 'Sertifikatlar va yutuqlar', cert_section_sub: "Malaka oshirish kurslari, xalqaro mukofotlar va ilmiy faoliyat natijalari",
+    cert_no_img: 'Rasm yuklanmagan', cert_zoom: "🔍 Ko'rish",
+    cert1_title: 'Global Education Award', cert1_desc: 'Xalqaro kongress, Melbourne, Avstraliya',
+    cert_training_title: 'Malaka oshirish sertifikati', cert_tmmi: 'Toshkent tibbiyot malaka oshirish instituti',
+    cert6_title: 'Klinik ordinatura diplomi', cert6_desc: '2-Toshkent Davlat Tibbiyot Instituti',
+    map_tag: 'Manzil', map_title: 'Bizni xaritada toping',
     footer_nav:'Sahifalar', footer_serv:'Xizmatlar', footer_contact:'Aloqa',
     footer_desc:'Complex Med klinikasi oliy toifali allergologi. 27 yillik klinikalik tajriba.',
     footer_copy:'© 2026 Dr. Xushnud Axmedov. Barcha huquqlar himoyalangan.',
@@ -66,7 +75,7 @@ const i18n = {
   },
   ru: {
     nav_about:'О враче', nav_services:'Услуги', nav_conditions:'Заболевания',
-    nav_contact:'Контакты', nav_cta:'Записаться',
+    nav_certs:'Сертификаты', nav_contact:'Контакты', nav_cta:'Записаться',
     hero_badge:'Аллерголог высшей категории',
     hero_sub:'27 лет опыта в аллергологии. Аллерголог клиники Complex Med. Современная диагностика и индивидуальный подход к каждому пациенту.',
     stat1:'Лет опыта', stat2:'Пациентов', stat3:'% Довольных',
@@ -75,16 +84,19 @@ const i18n = {
     about_tag:'О докторе',
     about_title:'Ваш надёжный партнёр в борьбе с аллергией',
     about_text:'Ахмедов Хушнуд Сапарбаевич — аллерголог высшей категории клиники Complex Med. Имеет 27 лет клинического опыта с 1997 года. Работал в Республиканском аллергологическом центре 12 лет, был ассистентом кафедры TMA, заместителем директора Республиканского научно-специализированного аллергологического центра.',
+    tl_tag1: 'Образование', tl_tag2: 'Деятельность', tl_tag3: 'Руководство', tl_tag4: 'Международная награда', tl_tag5: 'Текущее место работы',
     cred1_t:'2-ТашМИ — Высшее медицинское образование (1997–2006)', cred1_d:'Окончил институт и клиническую ординатуру по аллергологии',
     cred2_t:'Республиканский аллергологический центр (2006–2018)', cred2_d:'Ассистент кафедры аллергологии и иммунологии ТМА (2018–2019)',
     cred3_t:'Зам. директора & Главный врач (2019–2022)', cred3_d:'Респ. научно-специализированный аллергологический центр и Global Medical Center',
     cred4_t:'Мельбурн, Австралия — «Global Education Award» (2021)', cred4_d:'Повышение квалификации ТашИУВ: 2010, 2013, 2018, 2024',
+    cred5_t: 'Клиника Complex Med — Аллерголог высшей категории', cred5_d: 'Клиника Complex Med, Ташкент',
+    video_tag: 'Видео', video_title: 'Узнайте больше о докторе', video_sub: 'Подробная информация об опыте в области аллергологии, методах лечения и работе с пациентами.',
     serv_tag:'Услуги', serv_title:'Предоставляемые услуги',
     serv_sub:'От диагностики до лечения — комплексная помощь по современным методикам медицины',
     s1_name:'Диагностика аллергии', s1_desc:'Точное определение аллергена с помощью кожных тестов, анализа крови и провокационных тестов.',
     s2_name:'Иммунотерапия (АСИТ)', s2_desc:'Индивидуальные курсы иммунотерапии для снижения чувствительности к аллергену.',
     s3_name:'Бронхиальная астма', s3_desc:'Комплексная программа по контролю, лечению астмы и улучшению качества жизни.',
-    s4_name:'Аллергические заболевания кожи', s4_desc:'Лечение атопического дерматита, аллергического дерматита, крапивницы и других кожных аллергий.',
+    s4_name:'Аллергические заболевания кожи', s4_desc:'Лечение атопического дерматита, аллергического дерматита, крапивница и других кожных аллергий.',
     s5_name:'Поллиноз (аллергия на пыльцу)', s5_desc:'Специальный подход к профилактике и лечению симптомов сезонной аллергии.',
     s6_name:'Тяжёлые аллергические реакции', s6_desc:'Лечение синдрома Стивенса-Джонсона, синдрома Лайелла, токсикодермии и анафилаксии.',
     cond_tag:'Заболевания', cond_title:'Лечимые заболевания',
@@ -112,6 +124,12 @@ const i18n = {
     f_name:'Имя', f_phone:'Телефон', f_date:'Дата', f_time:'Время', f_reason:'Причина обращения', f_msg:'Сообщение (необязательно)',
     f_submit:'Записаться →',
     fr1:'Диагностика аллергии',fr2:'Бронхиальная астма',fr3:'Иммунотерапия',fr4:'Кожная аллергия',fr5:'Другое',
+    cert_tag: 'Документы', cert_section_title: 'Сертификаты и достижения', cert_section_sub: 'Курсы повышения квалификации, международные награды и результаты научной деятельности',
+    cert_no_img: 'Изображение не загружено', cert_zoom: '🔍 Просмотр',
+    cert1_title: 'Global Education Award', cert1_desc: 'Международный конгресс, Мельбурн, Австралия',
+    cert_training_title: 'Сертификат повышения квалификации', cert_tmmi: 'Ташкентский институт усовершенствования врачей',
+    cert6_title: 'Диплом клинической ординатуры', cert6_desc: '2-й Ташкентский государственный медицинский институт',
+    map_tag: 'Адрес', map_title: 'Найдите нас на карте',
     footer_nav:'Страницы', footer_serv:'Услуги', footer_contact:'Контакты',
     footer_desc:'Аллерголог высшей категории клиники Complex Med. 27 лет клинического опыта.',
     footer_copy:'© 2026 Др. Хушнуд Ахмедов. Все права защищены.',
@@ -129,7 +147,7 @@ const i18n = {
   },
   en: {
     nav_about:'About', nav_services:'Services', nav_conditions:'Conditions',
-    nav_contact:'Contact', nav_cta:'Book Appointment',
+    nav_certs:'Certificates', nav_contact:'Contact', nav_cta:'Book Appointment',
     hero_badge:'Allergist of the Highest Category',
     hero_sub:'27 years of experience in allergology. Allergist at Complex Med Clinic.',
     stat1:'Years experience', stat2:'Patients', stat3:'% Satisfaction',
@@ -138,10 +156,13 @@ const i18n = {
     about_tag:'About Doctor',
     about_title:'Your trusted partner in fighting allergies',
     about_text:'Axmedov Xushnud Saparbaevich is an allergist of the highest category at Complex Med Clinic. With 27 years of clinical experience since 1997, he served at the Republican Allergological Center for 12 years, as an assistant professor at TMA, and as Deputy Director of the Republican Scientific-Specialized Allergological Center.',
+    tl_tag1: 'Education', tl_tag2: 'Career', tl_tag3: 'Leadership', tl_tag4: 'International Award', tl_tag5: 'Current Workplace',
     cred1_t:'2nd TashSMI — Higher Medical Education (1997–2006)', cred1_d:'Medical degree and clinical residency in allergology',
     cred2_t:'Republican Allergological Center (2006–2018)', cred2_d:'Assistant, Dept. of Allergology & Immunology, TMA (2018–2019)',
     cred3_t:'Deputy Director & Chief Doctor (2019–2022)', cred3_d:'Republican Scientific-Specialized Allergological Center & Global Medical Center',
     cred4_t:'Melbourne, Australia — "Global Education Award" (2021)', cred4_d:'Advanced training at TashIUV: 2010, 2013, 2018, 2024',
+    cred5_t: 'Complex Med Clinic — Senior Allergist', cred5_d: 'Complex Med Clinic, Tashkent',
+    video_tag: 'Video', video_title: 'Learn more about the doctor', video_sub: 'Detailed information about experience in allergology, treatment methods and work with patients.',
     serv_tag:'Services', serv_title:'Services Offered',
     serv_sub:'From diagnosis to treatment — comprehensive care using modern medical methods',
     s1_name:'Allergy Diagnostics', s1_desc:'Accurate allergen identification through skin tests, blood tests, and provocation tests.',
@@ -175,6 +196,12 @@ const i18n = {
     f_name:'Name', f_phone:'Phone', f_date:'Date', f_time:'Time', f_reason:'Reason for visit', f_msg:'Message (optional)',
     f_submit:'Book Appointment →',
     fr1:'Allergy diagnostics',fr2:'Bronchial asthma',fr3:'Immunotherapy',fr4:'Skin allergy',fr5:'Other',
+    cert_tag: 'Documents', cert_section_title: 'Certificates & Achievements', cert_section_sub: 'Advanced training courses, international awards and scientific achievements',
+    cert_no_img: 'Image not loaded', cert_zoom: '🔍 View',
+    cert1_title: 'Global Education Award', cert1_desc: 'International Congress, Melbourne, Australia',
+    cert_training_title: 'Advanced Training Certificate', cert_tmmi: 'Tashkent Institute for Advanced Medical Training',
+    cert6_title: 'Clinical Residency Diploma', cert6_desc: '2nd Tashkent State Medical Institute',
+    map_tag: 'Location', map_title: 'Find us on the map',
     footer_nav:'Pages', footer_serv:'Services', footer_contact:'Contact',
     footer_desc:'Allergist of the highest category, Complex Med Clinic. 27 years of experience.',
     footer_copy:'© 2026 Dr. Xushnud Axmedov. All rights reserved.',
@@ -196,7 +223,7 @@ let currentLang = 'uz';
 
 function setLang(lang) {
   currentLang = lang;
-  document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.textContent === lang.toUpperCase()));
+  document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.textContent.trim() === lang.toUpperCase()));
   const t = i18n[lang];
   document.querySelectorAll('[data-key]').forEach(el => {
     const key = el.getAttribute('data-key');
@@ -308,18 +335,68 @@ function renderHours() {
 }
 
 // ---- FORM SUBMIT ----
-function submitForm() {
-  const name = document.getElementById('fName').value;
-  const phone = document.getElementById('fPhone').value;
+const TG_TOKEN = '8565288610:AAFVpeY4O4EvKB4gqKN4FZ8Nlq4aVs6pSnk';
+const TG_CHAT  = '@allergologahmedovqabul';
+
+async function submitForm() {
+  const name   = document.getElementById('fName').value.trim();
+  const phone  = document.getElementById('fPhone').value.trim();
+  const date   = document.getElementById('fDate').value;
+  const time   = document.getElementById('fTime').value;
+  const reason = document.getElementById('fReason').value;
+  const msg    = document.getElementById('fMsg').value.trim();
+
   if (!name || !phone) {
     showToast(currentLang === 'uz' ? 'Iltimos, ism va telefon kiriting.' : currentLang === 'ru' ? 'Пожалуйста, введите имя и телефон.' : 'Please enter name and phone.');
     return;
   }
-  showToast(i18n[currentLang].toast_success);
-  document.getElementById('fName').value = '';
-  document.getElementById('fPhone').value = '';
-  document.getElementById('fDate').value = '';
-  document.getElementById('fMsg').value = '';
+  if (!date) {
+    showToast(currentLang === 'uz' ? 'Iltimos, sanani kiriting.' : currentLang === 'ru' ? 'Пожалуйста, выберите дату.' : 'Please select a date.');
+    return;
+  }
+
+  const btn = document.getElementById('submitBtn');
+  btn.disabled = true;
+  btn.textContent = '⏳';
+
+  const text = [
+    '🩺 *Yangi qabul so\'rovi*',
+    `👤 *Ism:* ${name}`,
+    `📞 *Telefon:* ${phone}`,
+    `📅 *Sana:* ${date}`,
+    `⏰ *Vaqt:* ${time}`,
+    `📋 *Sabab:* ${reason}`,
+    msg ? `💬 *Xabar:* ${msg}` : ''
+  ].filter(Boolean).join('\n');
+
+  try {
+    const res = await fetch(`https://api.telegram.org/bot${TG_TOKEN}/sendMessage`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ chat_id: TG_CHAT, text, parse_mode: 'Markdown' })
+    });
+    const data = await res.json();
+    if (data.ok) {
+      showToast(i18n[currentLang].toast_success);
+      document.getElementById('fName').value = '';
+      document.getElementById('fPhone').value = '';
+      document.getElementById('fDate').value = '';
+      document.getElementById('fMsg').value = '';
+      btn.textContent = '✅';
+      setTimeout(() => {
+        btn.textContent = i18n[currentLang].f_submit;
+        btn.disabled = false;
+      }, 3000);
+    } else {
+      showToast(currentLang === 'uz' ? 'Xatolik yuz berdi. Qayta urinib ko\'ring.' : currentLang === 'ru' ? 'Произошла ошибка. Попробуйте снова.' : 'An error occurred. Please try again.');
+      btn.textContent = i18n[currentLang].f_submit;
+      btn.disabled = false;
+    }
+  } catch {
+    showToast(currentLang === 'uz' ? 'Tarmoq xatosi. Qayta urinib ko\'ring.' : currentLang === 'ru' ? 'Ошибка сети. Попробуйте снова.' : 'Network error. Please try again.');
+    btn.textContent = i18n[currentLang].f_submit;
+    btn.disabled = false;
+  }
 }
 function showToast(msg) {
   const t = document.getElementById('toast');

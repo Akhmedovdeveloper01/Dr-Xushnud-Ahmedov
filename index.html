@@ -21,6 +21,7 @@
                 <a href="#about" data-key="nav_about">Haqida</a>
                 <a href="#services" data-key="nav_services">Xizmatlar</a>
                 <a href="#conditions" data-key="nav_conditions">Kasalliklar</a>
+                <a href="#certificates" data-key="nav_certs">Sertifikatlar</a>
                 <a href="#contact" data-key="nav_contact">Aloqa</a>
                 <button
                     class="nav-cta nav-cta-mobile"
@@ -198,7 +199,7 @@
                                     <div class="tl-dot-inner">🎓</div>
                                 </div>
                                 <div class="tl-right">
-                                    <div class="tl-tag">Ta'lim</div>
+                                    <div class="tl-tag" data-key="tl_tag1">Ta'lim</div>
                                     <div class="tl-title" data-key="cred1_t">
                                         2-ToshDTI — Oliy tibbiy ta'lim
                                         (1997–2006)
@@ -217,7 +218,7 @@
                                     <div class="tl-dot-inner">🏥</div>
                                 </div>
                                 <div class="tl-right">
-                                    <div class="tl-tag">Ish faoliyati</div>
+                                    <div class="tl-tag" data-key="tl_tag2">Ish faoliyati</div>
                                     <div class="tl-title" data-key="cred2_t">
                                         Respublika allergologiya markazi
                                         (2006–2018)
@@ -236,7 +237,7 @@
                                     <div class="tl-dot-inner">🏆</div>
                                 </div>
                                 <div class="tl-right">
-                                    <div class="tl-tag">Rahbarlik</div>
+                                    <div class="tl-tag" data-key="tl_tag3">Rahbarlik</div>
                                     <div class="tl-title" data-key="cred3_t">
                                         Direktor o'rinbosari &amp; Bosh shifokor
                                         (2019–2022)
@@ -256,7 +257,7 @@
                                     <div class="tl-dot-inner">🌏</div>
                                 </div>
                                 <div class="tl-right">
-                                    <div class="tl-tag tl-tag--award">
+                                    <div class="tl-tag tl-tag--award" data-key="tl_tag4">
                                         Xalqaro mukofot
                                     </div>
                                     <div class="tl-title" data-key="cred4_t">
@@ -277,14 +278,14 @@
                                     <div class="tl-dot-inner">✦</div>
                                 </div>
                                 <div class="tl-right">
-                                    <div class="tl-tag tl-tag--active">
+                                    <div class="tl-tag tl-tag--active" data-key="tl_tag5">
                                         Hozirgi ish joyi
                                     </div>
-                                    <div class="tl-title">
+                                    <div class="tl-title" data-key="cred5_t">
                                         Complex Med klinikasi — Oliy toifali
                                         allergolog
                                     </div>
-                                    <div class="tl-desc">
+                                    <div class="tl-desc" data-key="cred5_d">
                                         Complex Med klinikasi, Toshkent
                                     </div>
                                 </div>
@@ -300,11 +301,11 @@
             <div class="container">
                 <div class="video-inner reveal">
                     <div class="video-text">
-                        <div class="section-tag">Video</div>
-                        <h2 class="section-title">
+                        <div class="section-tag" data-key="video_tag">Video</div>
+                        <h2 class="section-title" data-key="video_title">
                             Doktor haqida ko'proq bilib oling
                         </h2>
-                        <p class="section-sub">
+                        <p class="section-sub" data-key="video_sub">
                             Allergologiya va immunologiya sohasidagi tajriba,
                             davolash usullari va bemorlar bilan ishlash haqida
                             batafsil ma'lumot.
@@ -439,7 +440,7 @@
                     </div>
                     <div class="condition-chip">
                         <span class="chip-icon">🫧</span
-                        ><span class="chip-name" data-key="c3">Urtikaria</span>
+                        ><span class="chip-name" data-key="c3">Eshakemi</span>
                     </div>
                     <div class="condition-chip">
                         <span class="chip-icon">🌡️</span
@@ -569,9 +570,9 @@
         <section class="certificates" id="certificates">
             <div class="container">
                 <div class="section-header text-center reveal">
-                    <div class="section-tag">Hujjatlar</div>
-                    <h2 class="section-title">Sertifikatlar va yutuqlar</h2>
-                    <p class="section-sub">
+                    <div class="section-tag" data-key="cert_tag">Hujjatlar</div>
+                    <h2 class="section-title" data-key="cert_section_title">Sertifikatlar va yutuqlar</h2>
+                    <p class="section-sub" data-key="cert_section_sub">
                         Malaka oshirish kurslari, xalqaro mukofotlar va ilmiy
                         faoliyat natijalari
                     </p>
@@ -587,21 +588,21 @@
                             />
                             <div class="cert-placeholder">
                                 <span>📜</span>
-                                <p>Rasm yuklanmagan</p>
+                                <p data-key="cert_no_img">Rasm yuklanmagan</p>
                             </div>
                             <div class="cert-overlay">
                                 <button
                                     class="cert-zoom"
                                     onclick="openCert(this)"
                                 >
-                                    🔍 Ko'rish
+                                    <span data-key="cert_zoom">🔍 Ko'rish</span>
                                 </button>
                             </div>
                         </div>
                         <div class="cert-info">
                             <div class="cert-year">2021</div>
-                            <div class="cert-title">Global Education Award</div>
-                            <div class="cert-desc">
+                            <div class="cert-title" data-key="cert1_title">Global Education Award</div>
+                            <div class="cert-desc" data-key="cert1_desc">
                                 Xalqaro kongress, Melbourne, Avstraliya
                             </div>
                         </div>
@@ -616,23 +617,23 @@
                             />
                             <div class="cert-placeholder">
                                 <span>📜</span>
-                                <p>Rasm yuklanmagan</p>
+                                <p data-key="cert_no_img">Rasm yuklanmagan</p>
                             </div>
                             <div class="cert-overlay">
                                 <button
                                     class="cert-zoom"
                                     onclick="openCert(this)"
                                 >
-                                    🔍 Ko'rish
+                                    <span data-key="cert_zoom">🔍 Ko'rish</span>
                                 </button>
                             </div>
                         </div>
                         <div class="cert-info">
                             <div class="cert-year">2024</div>
-                            <div class="cert-title">
+                            <div class="cert-title" data-key="cert_training_title">
                                 Malaka oshirish sertifikati
                             </div>
-                            <div class="cert-desc">
+                            <div class="cert-desc" data-key="cert_tmmi">
                                 Toshkent tibbiyot malaka oshirish instituti
                             </div>
                         </div>
@@ -647,23 +648,23 @@
                             />
                             <div class="cert-placeholder">
                                 <span>📜</span>
-                                <p>Rasm yuklanmagan</p>
+                                <p data-key="cert_no_img">Rasm yuklanmagan</p>
                             </div>
                             <div class="cert-overlay">
                                 <button
                                     class="cert-zoom"
                                     onclick="openCert(this)"
                                 >
-                                    🔍 Ko'rish
+                                    <span data-key="cert_zoom">🔍 Ko'rish</span>
                                 </button>
                             </div>
                         </div>
                         <div class="cert-info">
                             <div class="cert-year">2018</div>
-                            <div class="cert-title">
+                            <div class="cert-title" data-key="cert_training_title">
                                 Malaka oshirish sertifikati
                             </div>
-                            <div class="cert-desc">
+                            <div class="cert-desc" data-key="cert_tmmi">
                                 Toshkent tibbiyot malaka oshirish instituti
                             </div>
                         </div>
@@ -678,23 +679,23 @@
                             />
                             <div class="cert-placeholder">
                                 <span>📜</span>
-                                <p>Rasm yuklanmagan</p>
+                                <p data-key="cert_no_img">Rasm yuklanmagan</p>
                             </div>
                             <div class="cert-overlay">
                                 <button
                                     class="cert-zoom"
                                     onclick="openCert(this)"
                                 >
-                                    🔍 Ko'rish
+                                    <span data-key="cert_zoom">🔍 Ko'rish</span>
                                 </button>
                             </div>
                         </div>
                         <div class="cert-info">
                             <div class="cert-year">2013</div>
-                            <div class="cert-title">
+                            <div class="cert-title" data-key="cert_training_title">
                                 Malaka oshirish sertifikati
                             </div>
-                            <div class="cert-desc">
+                            <div class="cert-desc" data-key="cert_tmmi">
                                 Toshkent tibbiyot malaka oshirish instituti
                             </div>
                         </div>
@@ -709,23 +710,23 @@
                             />
                             <div class="cert-placeholder">
                                 <span>📜</span>
-                                <p>Rasm yuklanmagan</p>
+                                <p data-key="cert_no_img">Rasm yuklanmagan</p>
                             </div>
                             <div class="cert-overlay">
                                 <button
                                     class="cert-zoom"
                                     onclick="openCert(this)"
                                 >
-                                    🔍 Ko'rish
+                                    <span data-key="cert_zoom">🔍 Ko'rish</span>
                                 </button>
                             </div>
                         </div>
                         <div class="cert-info">
                             <div class="cert-year">2010</div>
-                            <div class="cert-title">
+                            <div class="cert-title" data-key="cert_training_title">
                                 Malaka oshirish sertifikati
                             </div>
-                            <div class="cert-desc">
+                            <div class="cert-desc" data-key="cert_tmmi">
                                 Toshkent tibbiyot malaka oshirish instituti
                             </div>
                         </div>
@@ -740,23 +741,23 @@
                             />
                             <div class="cert-placeholder">
                                 <span>📜</span>
-                                <p>Rasm yuklanmagan</p>
+                                <p data-key="cert_no_img">Rasm yuklanmagan</p>
                             </div>
                             <div class="cert-overlay">
                                 <button
                                     class="cert-zoom"
                                     onclick="openCert(this)"
                                 >
-                                    🔍 Ko'rish
+                                    <span data-key="cert_zoom">🔍 Ko'rish</span>
                                 </button>
                             </div>
                         </div>
                         <div class="cert-info">
                             <div class="cert-year">2006</div>
-                            <div class="cert-title">
+                            <div class="cert-title" data-key="cert6_title">
                                 Klinik ordinatura diplomi
                             </div>
-                            <div class="cert-desc">
+                            <div class="cert-desc" data-key="cert6_desc">
                                 2-Toshkent Davlat Tibbiyot Instituti
                             </div>
                         </div>
@@ -1049,6 +1050,7 @@
                         </div>
                         <button
                             class="form-submit"
+                            id="submitBtn"
                             onclick="submitForm()"
                             data-key="f_submit"
                         >
@@ -1063,8 +1065,8 @@
         <section class="map-section">
             <div class="container">
                 <div class="section-header reveal">
-                    <div class="section-tag">Manzil</div>
-                    <h2 class="section-title">Bizni xaritada toping</h2>
+                    <div class="section-tag" data-key="map_tag">Manzil</div>
+                    <h2 class="section-title" data-key="map_title">Bizni xaritada toping</h2>
                 </div>
             </div>
             <div class="map-wrapper reveal">
