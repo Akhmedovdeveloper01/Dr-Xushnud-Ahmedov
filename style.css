@@ -1222,12 +1222,15 @@ footer {
   text-align: center; font-size: 0.75rem;
 }
 @media (max-width: 600px) {
-  .hours-grid {
-    grid-template-columns: repeat(7, 52px);
+  .hours-grid-wrap {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
-    gap: 0.3rem;
     padding-bottom: 0.5rem;
+  }
+  .hours-grid {
+    grid-template-columns: repeat(7, 52px);
+    gap: 0.3rem;
+    min-width: max-content;
   }
   .hour-day {
     padding: 0.5rem 0.25rem;
