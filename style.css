@@ -1222,18 +1222,12 @@ footer {
   text-align: center; font-size: 0.75rem;
 }
 @media (max-width: 600px) {
-  .hours-grid-wrap {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    padding-bottom: 0.5rem;
-  }
   .hours-grid {
-    grid-template-columns: repeat(7, 52px);
-    gap: 0.3rem;
-    min-width: max-content;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.4rem;
   }
   .hour-day {
-    padding: 0.5rem 0.25rem;
+    padding: 0.6rem 0.25rem;
   }
 }
 .hour-day.today { background: var(--accent-light); border-color: var(--accent); }
