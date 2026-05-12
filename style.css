@@ -1223,14 +1223,14 @@ footer {
 }
 @media (max-width: 600px) {
   .hours-grid {
-    grid-template-columns: repeat(7, minmax(48px, 1fr));
+    grid-template-columns: repeat(7, 52px);
     overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
     gap: 0.3rem;
-    padding-bottom: 0.25rem;
+    padding-bottom: 0.5rem;
   }
   .hour-day {
     padding: 0.5rem 0.25rem;
-    min-width: 48px;
   }
 }
 .hour-day.today { background: var(--accent-light); border-color: var(--accent); }
