@@ -1221,6 +1221,18 @@ footer {
   border-radius: 10px; padding: 0.75rem 0.5rem;
   text-align: center; font-size: 0.75rem;
 }
+@media (max-width: 600px) {
+  .hours-grid {
+    grid-template-columns: repeat(7, minmax(48px, 1fr));
+    overflow-x: auto;
+    gap: 0.3rem;
+    padding-bottom: 0.25rem;
+  }
+  .hour-day {
+    padding: 0.5rem 0.25rem;
+    min-width: 48px;
+  }
+}
 .hour-day.today { background: var(--accent-light); border-color: var(--accent); }
 .hd-name { color: var(--text3); font-weight: 500; margin-bottom: 0.25rem; }
 .hd-time { color: var(--text); font-weight: 600; font-size: 0.7rem; }
