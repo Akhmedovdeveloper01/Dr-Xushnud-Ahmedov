@@ -9,7 +9,7 @@ const i18n = {
         nav_cta: "Qabulga yozilish",
         hero_badge: "Oliy toifali allergolog",
         hero_sub:
-            "Allergologiya sohasida 23+ yillik tajriba. Yevropa Allergologiya va Klinik Immunologiya akademiyasi (EAACI) faxriy a'zosi. Complex Med klinikasi allergologi. Har bir bemorga individual yondashuv va zamonaviy davolash usullari bilan maksimal natija kafolatlanadi.",
+            "Allergologiya sohasida 23+ yillik tajriba. Yevropa Allergologiya va Klinik Immunologiya akademiyasi (EAACI) faxriy a'zosi. Complex Med klinikasi allergologi. Har bir bemorga individual yondashuv va zamonaviy davolash usullari bilan maksimal natija.",
         stat1: "Yil tajriba",
         stat2: "Bemorlar",
         stat3: "% Mamnunlik",
@@ -194,7 +194,7 @@ const i18n = {
         nav_cta: "Записаться",
         hero_badge: "Аллерголог высшей категории",
         hero_sub:
-            "27 лет опыта в аллергологии. Почётный член Европейской академии аллергологии и клинической иммунологии (EAACI). Аллерголог клиники Complex Med. Современная диагностика и индивидуальный подход к каждому пациенту.",
+            "23+ лет опыта в аллергологии. Почётный член Европейской академии аллергологии и клинической иммунологии (EAACI). Аллерголог клиники Complex Med. Современная диагностика и индивидуальный подход к каждому пациенту.",
         stat1: "Лет опыта",
         stat2: "Пациентов",
         stat3: "% Довольных",
@@ -378,7 +378,7 @@ const i18n = {
         nav_cta: "Book Appointment",
         hero_badge: "Allergist of the Highest Category",
         hero_sub:
-            "27 years of experience in allergology. Honorary Member of the European Academy of Allergy and Clinical Immunology (EAACI). Allergist at Complex Med Clinic. Maximum results guaranteed through an individual approach and modern treatment methods.",
+            "23+ years of experience in allergology. Honorary Member of the European Academy of Allergy and Clinical Immunology (EAACI). Allergist at Complex Med Clinic. Individual approach and modern treatment methods for maximum results.",
         stat1: "Years experience",
         stat2: "Patients",
         stat3: "% Satisfaction",
@@ -829,19 +829,37 @@ function initTestimonialsCarousel() {
     function buildDots() {
         dotsEl.innerHTML = "";
         const count = maxIndex() + 1;
+        const inner = document.createElement("div");
+        inner.className = "carousel-dots-inner";
         for (let i = 0; i < count; i++) {
             const d = document.createElement("button");
             d.className = "carousel-dot" + (i === current ? " active" : "");
             d.setAttribute("aria-label", `Slide ${i + 1}`);
             d.addEventListener("click", () => goTo(i));
-            dotsEl.appendChild(d);
+            inner.appendChild(d);
         }
+        dotsEl.appendChild(inner);
+        slideDotWindow();
+    }
+
+    function slideDotWindow() {
+        const inner = dotsEl.querySelector(".carousel-dots-inner");
+        if (!inner) return;
+        const count = maxIndex() + 1;
+        const VISIBLE = 7;
+        if (count <= VISIBLE) return;
+        const rem = parseFloat(getComputedStyle(document.documentElement).fontSize) || 16;
+        const step = 8 + 0.4 * rem;
+        const half = Math.floor(VISIBLE / 2);
+        const start = Math.max(0, Math.min(current - half, count - VISIBLE));
+        inner.style.transform = `translateX(-${start * step}px)`;
     }
 
     function updateDots() {
         dotsEl
             .querySelectorAll(".carousel-dot")
             .forEach((d, i) => d.classList.toggle("active", i === current));
+        slideDotWindow();
     }
 
     function goTo(idx) {

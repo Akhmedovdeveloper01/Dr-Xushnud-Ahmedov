@@ -802,7 +802,8 @@ section { padding: 6rem 2rem; }
   flex-shrink: 0;
 }
 .carousel-btn:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
-.carousel-dots { display: flex; gap: 0.4rem; align-items: center; }
+.carousel-dots { overflow: hidden; max-width: calc(7 * 8px + 6 * 0.4rem); display: flex; align-items: center; }
+.carousel-dots-inner { display: flex; gap: 0.4rem; align-items: center; flex-shrink: 0; transition: transform 0.3s ease; }
 .carousel-dot {
   width: 8px; height: 8px; border-radius: 50%;
   background: var(--border); cursor: pointer;
