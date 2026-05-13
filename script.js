@@ -122,7 +122,7 @@ const i18n = {
         ci_addr_l: "Manzil",
         ci_phone_l: "Telefon",
         ci_hours_l: "Ish vaqti",
-        ci_hours_v: "Dush–Jum: 8:00–16:00",
+        ci_hours_v: "Dush–Shan: 8:00–16:00",
         form_title: "Qabul uchun so'rov",
         f_name: "Ism",
         f_phone: "Telefon",
@@ -159,17 +159,17 @@ const i18n = {
             "© 2026 Dr. Xushnud Axmedov. Barcha huquqlar himoyalangan.",
         footer_copy2: "Complex Med klinikasi, Toshkent",
         days: ["Du", "Se", "Ch", "Pa", "Ju", "Sh", "Ya"],
-        hours: ["8–16", "8–16", "8–16", "8–16", "8–16", "Dam", "Dam"],
+        hours: ["8–16", "8–16", "8–16", "8–16", "8–16", "8-16", "Dam"],
         toast_success:
             "Muvaffaqiyatli yuborildi! Tez orada siz bilan bog'lanamiz.",
         faqs: [
             {
                 q: "Birinchi qabul qancha vaqt davom etadi?",
-                a: "Birinchi qabul odatda 40–60 daqiqa davom etadi. Bu vaqt ichida anamnez to'plash, ko'rik o'tkazish va zaruriy tahlillar buyurish amalga oshiriladi.",
+                a: "Birinchi qabul odatda 20-40 daqiqa davom etadi. Bu vaqt ichida anamnez to'plash, ko'rik o'tkazish va zaruriy tahlillar buyurish amalga oshiriladi.",
             },
             {
                 q: "Allergiya testlari og'riqli bo'ladimi?",
-                a: "Teri testlari, ayniqsa, prick-test (teshish testi) deyarli og'riqsiz. Ko'pchilik bemorlar faqat engil qichishni his qiladi.",
+                a: "2-5 ml qon olinadi 30 tadan 295 xil allergiyalarni aniqlab beriladi. Og'riq bo'lmaydi"
             },
             {
                 q: "Bolalar nechanchi yoshdan qabul qilinadi?",
@@ -182,6 +182,10 @@ const i18n = {
             {
                 q: "Qabul uchun qanday hujjatlar kerak?",
                 a: "Pasport yoki ID karta, avvalgi tekshiruv natijalari (agar mavjud bo'lsa) va ro'yxatdan o'tish talab qilinadi.",
+            },
+            {
+                q: "Statsionar, ya'ni yotib davolanish uchun sharoit bormi?",
+                a: "Albatta, bizda 1 va 2 kishilik palatalar mavjud va barcha mutaxassislar jalb qilingan: kardiolog, endokrinolog, nevropatolog, travmatolog, ginekolog, LOR, shuningdek fizioterapiya va massaj xonalari ham bor.",
             },
         ],
     },
@@ -307,7 +311,7 @@ const i18n = {
         ci_addr_l: "Адрес",
         ci_phone_l: "Телефон",
         ci_hours_l: "Рабочие часы",
-        ci_hours_v: "Пн–Пт: 8:00–16:00",
+        ci_hours_v: "Пн–Суб: 8:00–16:00",
         form_title: "Запрос на приём",
         f_name: "Имя",
         f_phone: "Телефон",
@@ -343,17 +347,17 @@ const i18n = {
         footer_copy: "© 2026 Др. Хушнуд Ахмедов. Все права защищены.",
         footer_copy2: "Complex Med клиника, Ташкент",
         days: ["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс"],
-        hours: ["8–16", "8–16", "8–16", "8–16", "8–16", "Вых", "Вых"],
+        hours: ["8–16", "8–16", "8–16", "8–16", "8–16", "8-16", "Вых"],
         toast_success:
             "Успешно отправлено! Мы свяжемся с вами в ближайшее время.",
         faqs: [
             {
                 q: "Сколько длится первичный приём?",
-                a: "Первичный приём длится 40–60 минут: сбор анамнеза, осмотр и назначение необходимых анализов.",
+                a: "Первичный приём длится 20-40 минут: сбор анамнеза, осмотр и назначение необходимых анализов.",
             },
             {
                 q: "Болезненны ли тесты на аллергию?",
-                a: "Кожные тесты, особенно прик-тест, практически безболезненны. Большинство пациентов ощущают лишь лёгкое зуд.",
+                a: "Берётся 2–5 мл крови, по которой определяется от 30 до 295 видов аллергий. Процедура безболезненна.",
             },
             {
                 q: "С какого возраста принимают детей?",
@@ -366,6 +370,10 @@ const i18n = {
             {
                 q: "Какие документы нужны для приёма?",
                 a: "Паспорт или удостоверение личности, предыдущие результаты обследований (если есть) и запись на приём.",
+            },
+            {
+                q: "Есть ли у вас стационар, то есть возможность лечения с проживанием?",
+                a: "Конечно, у нас есть одно- и двухместные палаты, и привлечены все необходимые специалисты: кардиолог, эндокринолог, невропатолог, травматолог, гинеколог, ЛОР, а также кабинеты физиотерапии и массажа.",
             },
         ],
     },
@@ -491,7 +499,7 @@ const i18n = {
         ci_addr_l: "Address",
         ci_phone_l: "Phone",
         ci_hours_l: "Working Hours",
-        ci_hours_v: "Mon–Fri: 8:00–16:00",
+        ci_hours_v: "Mon-Sat: 8:00–16:00",
         form_title: "Appointment Request",
         f_name: "Name",
         f_phone: "Phone",
@@ -527,16 +535,16 @@ const i18n = {
         footer_copy: "© 2026 Dr. Xushnud Axmedov. All rights reserved.",
         footer_copy2: "Complex Med Clinic, Tashkent",
         days: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
-        hours: ["8–16", "8–16", "8–16", "8–16", "8–16", "Off", "Off"],
+        hours: ["8–16", "8–16", "8–16", "8–16", "8–16", "8-16", "Off"],
         toast_success: "Successfully submitted! We will contact you shortly.",
         faqs: [
             {
                 q: "How long does the first appointment take?",
-                a: "The first appointment usually takes 40–60 minutes including history taking, examination, and ordering necessary tests.",
+                a: "The first appointment usually takes 20-40 minutes including history taking, examination, and ordering necessary tests.",
             },
             {
                 q: "Are allergy tests painful?",
-                a: "Skin tests, especially the prick test, are nearly painless. Most patients only feel a mild itch.",
+                a: "2–5 ml of blood is taken, which allows detection of 30 to 295 types of allergies. The procedure is painless.",
             },
             {
                 q: "From what age are children accepted?",
@@ -549,6 +557,10 @@ const i18n = {
             {
                 q: "What documents are needed for the appointment?",
                 a: "Passport or ID card, previous test results (if available), and registration/booking.",
+            },
+            {
+                q: "Do you have inpatient facilities for hospital-based treatment?",
+                a: "Yes, we have single and double rooms, with all necessary specialists on staff: cardiologist, endocrinologist, neuropathologist, traumatologist, gynecologist, ENT doctor, as well as physiotherapy and massage rooms.",
             },
         ],
     },

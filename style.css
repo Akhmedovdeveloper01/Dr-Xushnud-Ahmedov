@@ -987,6 +987,10 @@ section { padding: 6rem 2rem; }
 .social-yt:hover { border-color: #FF0000; background: #fff5f5; }
 [data-theme="dark"] .social-yt .social-icon { background: rgba(255,0,0,0.15); color: #FF0000; }
 [data-theme="dark"] .social-yt:hover { background: rgba(255,0,0,0.08); }
+.social-fb .social-icon { background: #e7f0fd; color: #1877F2; }
+.social-fb:hover { border-color: #1877F2; background: #eef4ff; }
+[data-theme="dark"] .social-fb .social-icon { background: rgba(24,119,242,0.15); color: #1877F2; }
+[data-theme="dark"] .social-fb:hover { background: rgba(24,119,242,0.08); }
 
 /* ---- FOOTER SOCIAL ---- */
 .footer-social {
@@ -1008,6 +1012,7 @@ section { padding: 6rem 2rem; }
 .footer-tg:hover { border-color: #2AABEE; color: #2AABEE; background: rgba(42,171,238,0.08); }
 .footer-ig:hover { border-color: #E1306C; color: #E1306C; background: rgba(225,48,108,0.08); }
 .footer-yt:hover { border-color: #FF0000; color: #FF0000; background: rgba(255,0,0,0.08); }
+.footer-fb:hover { border-color: #1877F2; color: #1877F2; background: rgba(24,119,242,0.08); }
 .footer-col a, .footer-col p { color: var(--text2); }
 .footer-col a[href^="tel"] { color: var(--accent); font-weight: 600; }
 .ci-val a { color: var(--accent); text-decoration: none; font-weight: 600; }
