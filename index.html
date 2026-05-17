@@ -97,7 +97,7 @@
         />
         <link rel="preload" as="image" href="./img/doctor-img.webp" type="image/webp" />
         <link rel="icon" type="image/svg+xml" href="./img/favicon.svg" />
-        <link rel="stylesheet" href="style.css?v=8" />
+        <link rel="stylesheet" href="style.css?v=10" />
     </head>
     <body>
         <!-- NAVBAR -->
@@ -109,13 +109,13 @@
                 <a href="#conditions" data-key="nav_conditions">Kasalliklar</a>
                 <a href="#certificates" data-key="nav_certs">Sertifikatlar</a>
                 <a href="#contact" data-key="nav_contact">Aloqa</a>
-                <button
+                <a
                     class="nav-cta nav-cta-mobile"
-                    onclick="scrollTo('contact')"
+                    href="#contact"
                     data-key="nav_cta"
                 >
                     Qabulga yozilish
-                </button>
+                </a>
             </div>
             <div class="nav-right">
                 <div class="lang-select">
@@ -128,13 +128,13 @@
                 <button class="theme-btn" onclick="toggleTheme()" id="themeBtn">
                     🌙
                 </button>
-                <button
+                <a
                     class="nav-cta"
-                    onclick="scrollTo('contact')"
+                    href="#contact"
                     data-key="nav_cta"
                 >
                     Qabulga yozilish
-                </button>
+                </a>
                 <button class="mobile-menu-btn" onclick="toggleMobile()">
                     ☰
                 </button>

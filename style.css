@@ -103,6 +103,7 @@ nav {
   font-size: 0.85rem; font-weight: 600;
   cursor: pointer; transition: all 0.25s;
   font-family: 'DM Sans', sans-serif;
+  text-decoration: none; display: inline-block;
 }
 .nav-cta:hover { background: var(--accent2); transform: translateY(-1px); }
 .nav-cta-mobile { display: none; }
