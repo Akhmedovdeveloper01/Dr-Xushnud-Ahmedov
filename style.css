@@ -212,6 +212,7 @@ nav {
   cursor: pointer; transition: all 0.3s;
   font-family: 'DM Sans', sans-serif;
   letter-spacing: 0.02em;
+  text-decoration: none; display: inline-block;
 }
 .btn-primary:hover {
   background: var(--accent2);
@@ -227,6 +228,7 @@ nav {
   font-size: 0.9rem; font-weight: 600;
   cursor: pointer; transition: all 0.3s;
   font-family: 'DM Sans', sans-serif;
+  text-decoration: none; display: inline-block;
 }
 .btn-outline:hover {
   border-color: var(--accent); color: var(--accent);
@@ -247,6 +249,11 @@ nav {
   box-shadow: var(--shadow-lg);
   border: 1px solid var(--border);
   position: relative;
+  animation: cardPulse 3s ease-in-out infinite;
+}
+@keyframes cardPulse {
+  0%, 100% { box-shadow: var(--shadow-lg), 0 0 0 0px rgba(45,106,79,0.4); }
+  50% { box-shadow: var(--shadow-lg), 0 0 0 10px rgba(45,106,79,0); }
 }
 .doctor-img-wrap {
   height: 420px;
@@ -272,20 +279,8 @@ nav {
   border-radius: 24px;
   object-position: calc(50%) calc(50% + 30px);
 }
-.doctor-rings {
-  position: absolute; inset: 0;
-  display: flex; align-items: center; justify-content: center;
-}
-.ring {
-  position: absolute;
-  border-radius: 50%;
-  border: 1px solid var(--accent2);
-  opacity: 0.2;
-  animation: expand 3s linear infinite;
-}
-.ring:nth-child(1) { width: 240px; height: 240px; animation-delay: 0s; }
-.ring:nth-child(2) { width: 300px; height: 300px; animation-delay: 1s; }
-.ring:nth-child(3) { width: 360px; height: 360px; animation-delay: 2s; }
+.doctor-rings { display: none; }
+.ring { display: none; }
 @keyframes expand {
   0% { transform: scale(0.8); opacity: 0.3; }
   100% { transform: scale(1.2); opacity: 0; }
@@ -1174,6 +1169,9 @@ footer {
   .hero-stats { justify-content: center; }
   .hero-buttons { justify-content: center; }
   .hero-image { display: block; margin: 2rem auto 0; max-width: 320px; }
+  .doctor-info-card { margin-left: 20px; }
+  .float-badge-2 { bottom: 115px; }
+  .doctor-avatar img { object-position: calc(50%) calc(50% + 12px); }
   .about-grid { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; }
   .footer-container { grid-template-columns: 1fr 1fr; }
@@ -1184,6 +1182,7 @@ footer {
 @media (max-width: 600px) {
   nav { padding: 0.75rem 1rem; }
   .nav-cta { display: none; }
+  .nav-links a.nav-cta-mobile { color: #fff !important; border-bottom: none; }
   .nav-links .nav-cta-mobile {
     opacity: 0;
     transform: translateX(-10px);
